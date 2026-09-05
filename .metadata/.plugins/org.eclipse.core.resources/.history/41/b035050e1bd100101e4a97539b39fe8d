@@ -1,0 +1,53 @@
+package com.exercise;
+
+import java.util.*;
+
+public class AddressBook<T> {
+ 
+	ArrayList<Person> persons = new ArrayList<>();
+	
+	public void  addPerson(Person person) {
+		persons.add(person); 
+	}
+	
+
+//	groped by city
+	
+	public void listByCity() {
+		HashMap<City, ArrayList<Person>> map1 = new HashMap<>(); //map creation
+		
+		for(Person p : persons ) { //loop through persons list
+			City city = p.homeAddress.city; //getting city from person class using homeaddress
+			map1.putIfAbsent(city, new ArrayList<>());
+			map1.get(city).add(p);
+		}
+		
+		for(City city : map1.keySet()) {
+			System.out.println("City "+ city);
+			System.out.println("********************************");
+			
+			for(Person p : map1.get(city)) {
+				System.out.println(" "+ p);
+				System.out.println();
+			}
+		}
+	}
+	
+//	grouped by country
+	
+	public void listByCountry() {
+		HashMap <Country, ArrayList<Person>> map2 = new HashMap<>();
+		
+		for(Person p : persons) {
+			Country country = p.homeAddress.country;
+			map2.putIfAbsent(country, new ArrayList<>());
+		    map2.get(country).add(p); 
+		}
+		for(Country country: map2.keySet()) {
+			
+		}
+	}
+
+
+	
+}

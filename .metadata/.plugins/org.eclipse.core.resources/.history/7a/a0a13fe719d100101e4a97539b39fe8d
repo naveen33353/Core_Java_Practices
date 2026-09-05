@@ -1,0 +1,169 @@
+package com.exercise;
+
+public class Domain {
+public static void main(String[] args) {
+	
+	AddressBook book = new AddressBook();
+	
+	
+	
+	Person p1 = new Person("Naveen","Santhosh","12-01-2005", 
+			    new Address("12B","ABC Apartments", "MG Road",
+			    new City("100","Kozhikode"),
+			    "9895642532","rahul.menon@example.com"),"Kochi");
+
+		Person p2 = new Person("Arjun","Menon","05-03-2004",
+		    new Address("45A","Rose Villa","Park Street",
+		    new City("101","Thrissur"),
+		    "9847123456","arjun.menon@example.com"),"Kochi");
+
+		Person p3 = new Person("Rahul","Krishnan","22-07-2003",
+		    new Address("18C","Galaxy Heights","Link Road",
+		    new City("102","Kollam"),
+		    "9876543210","rahul.krishnan@example.com"),"Kollam");
+
+		Person p4 = new Person("Akhil","Suresh","10-11-2002",
+		    new Address("33D","Blue Towers","Beach Road",
+		    new City("103","Alappuzha"),
+		    "9947012345","akhil.suresh@example.com"),"Alappuzha");
+
+		Person p5 = new Person("Manu","Raj","09-02-2005",
+		    new Address("77F","River View","Temple Street",
+		    new City("104","Kannur"),
+		    "9887766554","manu.raj@example.com"),"Kannur");
+
+		Person p6 = new Person("Sanjay","Varma","15-06-2004",
+		    new Address("90A","Lotus Enclave","Hill Road",
+		    new City("105","Kottayam"),
+		    "9895071234","sanjay.varma@example.com"),"Kottayam");
+
+		Person p7 = new Person("Vishnu","Balakrishnan","31-08-2003",
+		    new Address("21B","Silver Nest","Airport Road",
+		    new City("106","Kasaragod"),
+		    "9876001122","vishnu.bala@example.com"),"Kasaragod");
+
+		Person p8 = new Person("Adithya","Krish","27-12-2005",
+		    new Address("14E","Dream Homes","Stadium Road",
+		    new City("107","Palakkad"),
+		    "9933445566","adithya.krish@example.com"),"Palakkad");
+
+		Person p9 = new Person("Roshan","Das","19-04-2004",
+		    new Address("29H","Sunrise Residency","College Road",
+		    new City("108","Malappuram"),
+		    "9812345678","roshan.das@example.com"),"Malappuram");
+
+		Person p10 = new Person("Nikhil","Prakash","03-10-2003",
+		    new Address("85G","Harmony Flats","Church Street",
+		    new City("109","Ernakulam"),
+		    "9947654321","nikhil.prakash@example.com"),"Ernakulam");
+
+		Person p11 = new Person("Aravind","Nair","12-09-2002",
+		    new Address("66D","Crystal Homes","Main Road",
+		    new City("110","Trivandrum"),
+		    "9847098765","aravind.nair@example.com"),"Trivandrum");
+
+		Person p12 = new Person("Jishnu","Soman","28-01-2005",
+		    new Address("57C","Olive Court","Bypass Road",
+		    new City("111","Pathanamthitta"),
+		    "9800123456","jishnu.soman@example.com"),"Pathanamthitta");
+
+		Person p13 = new Person("Ashwin","Pillai","04-05-2004",
+		    new Address("41F","Emerald Palace","Market Road",
+		    new City("112","Idukki"),
+		    "9865321001","ashwin.pillai@example.com"),"Idukki");
+
+		Person p14 = new Person("Shamil","Rahman","16-03-2003",
+		    new Address("19B","Golden Square","East Street",
+		    new City("113","Wayanad"),
+		    "9890011223","shamil.rahman@example.com"),"Wayanad");
+
+		Person p15 = new Person("Farhan","Ali","30-07-2005",
+		    new Address("72E","City Crown","West Street",
+		    new City("114","Calicut"),
+		    "9823456701","farhan.ali@example.com"),"Calicut");
+
+		Person p16 = new Person("Alan","Joseph","21-08-2004",
+		    new Address("33A","Hill Crest","North Avenue",
+		    new City("115","Kannur"),
+		    "9845011223","alan.joseph@example.com"),"Kannur");
+
+		Person p17 = new Person("Kevin","Thomas","11-11-2003",
+		    new Address("95C","White House","South Avenue",
+		    new City("116","Trivandrum"),
+		    "9811112233","kevin.thomas@example.com"),"Trivandrum");
+
+		Person p18 = new Person("Dhanush","SJ","02-06-2005",
+		    new Address("10G","Olive Gardens","Club Road",
+		    new City("117","Ernakulam"),
+		    "9856784321","dhanush.sj@example.com"),"Ernakulam");
+
+		Person p19 = new Person("Jithin","Varghese","09-12-2004",
+		    new Address("52B","Skyline Homes","Ring Road",
+		    new City("118","Kollam"),
+		    "9822998877","jithin.varghese@example.com"),"Kollam");
+
+		Person p20 = new Person("Sreenath","U","25-03-2003",
+		    new Address("37D","Pearl Residency","MG Road",
+		    new City("119","Kochi"),
+		    "9900112233","sreenath.u@example.com"),"Kochi");
+
+		Person p21 = new Person("Ameer","Salim","14-04-2005",
+		    new Address("48F","Palm View","City Road",
+		    new City("120","Calicut"),
+		    "9812349988","ameer.salim@example.com"),"Calicut");
+
+		Person p22 = new Person("Neeraj","Jayakumar","05-01-2004",
+		    new Address("26H","Green Valley","Hilltop Road",
+		    new City("121","Kottayam"),
+		    "9933004411","neeraj.jk@example.com"),"Kottayam");
+
+		Person p23 = new Person("Rohit","Dev","07-07-2003",
+		    new Address("88A","Silverline","Seaport Road",
+		    new City("122","Ernakulam"),
+		    "9800678945","rohit.dev@example.com"),"Ernakulam");
+
+		Person p24 = new Person("Adarsh","Krishna","19-02-2005",
+		    new Address("60C","Sun City","Garden Road",
+		    new City("123","Thrissur"),
+		    "9877001122","adarsh.krishna@example.com"),"Thrissur");
+
+		Person p25 = new Person("Sarath","Mohan","01-09-2004",
+		    new Address("34G","Royal Enclave","Puthiyara Road",
+		    new City("124","Calicut"),
+		    "9865003344","sarath.mohan@example.com"),"Calicut");
+
+
+	
+	
+	book.addPerson(p1);
+	book.addPerson(p2);
+	book.addPerson(p3);
+	book.addPerson(p4);
+	book.addPerson(p5);
+	book.addPerson(p6);
+	book.addPerson(p7);
+	book.addPerson(p8);
+	book.addPerson(p9); 
+	book.addPerson(p10);
+	
+	book.addPerson(p11);
+	book.addPerson(p12);
+	book.addPerson(p13);
+	book.addPerson(p14);
+	book.addPerson(p15);
+	book.addPerson(p16);
+	book.addPerson(p17);
+	book.addPerson(p18);
+	book.addPerson(p19);
+	book.addPerson(p20);
+	
+	book.addPerson(p21);
+	book.addPerson(p22);
+	book.addPerson(p23);
+	book.addPerson(p24);
+	book.addPerson(p25);
+	
+ 	book.listByCity();
+	
+}
+}
