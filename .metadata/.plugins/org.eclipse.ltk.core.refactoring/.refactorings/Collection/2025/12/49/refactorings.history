@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.exercise.NewAddressBook&apos; to &apos;CountryAddressBook&apos;&#x0D;&#x0A;- Original project: &apos;Collection&apos;&#x0D;&#x0A;- Original element: &apos;com.exercise.NewAddressBook&apos;&#x0D;&#x0A;- Renamed element: &apos;com.exercise.CountryAddressBook&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;NewAddressBook&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.exercise{NewAddressBook.java[NewAddressBook" matchStrategy="1" name="CountryAddressBook" qualified="false" references="true" similarDeclarations="false" stamp="1764865845785" textual="false" version="1.0"/>
+</session>

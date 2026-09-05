@@ -1,0 +1,21 @@
+package com.oops;
+
+public class Static {
+public static void main(String[] args) {
+	Friend friend1 = new Friend("Naveen");
+	Friend friend2 = new Friend("Abijith");
+	Friend friend3 = new Friend("Aswin");
+	
+	
+//	static keyword use cheyyumbol ingane object creation cheyyand class name ubayogichu cheyyam
+	
+//	System.out.println(friend1.numOfFriends);
+//	System.out.println(friend2.numOfFriends);
+//	System.out.println(friend3.numOfFriends);
+
+	System.out.println(Friend.numOfFriends);
+	
+}
+	
+	
+}

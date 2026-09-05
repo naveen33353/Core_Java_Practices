@@ -1,0 +1,109 @@
+package com.exercise;
+
+import java.util.*;
+
+public class AddressBook<T> {
+ 
+//	1,2
+	ArrayList<Person> persons = new ArrayList<>();
+	
+	public void  addPerson(Person person) {
+		persons.add(person); 
+	}
+	
+
+//   3.1	groped by city
+	
+	public void listByCity() {
+		HashMap<City, ArrayList<Person>> map1 = new HashMap<>(); //map creation
+		
+		for(Person p : persons ) { //loop through persons list
+			City city = p.homeAddress.city; //getting city from person class using homeaddress
+			map1.putIfAbsent(city, new ArrayList<>());
+			map1.get(city).add(p);
+		}
+		
+		for(City city : map1.keySet()) {
+			System.out.println("City : "+ city);
+			System.out.println("********************************");
+			
+			for(Person p : map1.get(city)) {
+				System.out.println(" "+ p);
+				System.out.println();
+			}
+		}
+	}
+	
+//	3.2   grouped by country
+	
+	public void listByCountry() {
+		HashMap <Country, ArrayList<Person>> map2 = new HashMap<>();
+		
+		for(Person p : persons) {
+			Country country = p.homeAddress.country;
+			map2.putIfAbsent(country, new ArrayList<>());
+		    map2.get(country).add(p); 
+		}
+		for(Country country: map2.keySet()) {
+			System.out.println("Country :  "+ country);
+			System.out.println("************************************");
+			
+			for(Person p : map2.get(country)) {
+				System.out.println(" "+ p);
+				System.out.println(); 
+			}
+		}
+	}
+	
+//	4.return all person who are older than 25 yrs
+	
+	public Set<Person> getPersonOlderThan25() {
+		Set <Person> result1 =new HashSet<>();
+		for(Person p : persons) {
+			if(p.getAge()>25) {
+				result1.add(p);	
+			}
+			
+		}
+		return result1;
+	}
+	
+//	5. All person working in given city
+	
+	public void getPersonWorkingInCity(String city) {
+		
+		boolean found = false;
+		for(Person p : persons) {
+			if(p.workAddress.city.name.equals(city)) {
+				found = true;
+				System.out.println(p);
+			}
+		}
+		if(!found) {
+			System.out.println("persons working at "+ city + " are not found");
+		}
+		
+	}
+	
+//	6. All persons Working in same city and older tha 20
+
+	public Person getPersonWorkingInCityAndOlderThan20(String city) {
+		
+		boolean found = false;
+		for(Person p : persons) {
+			if(p.workAddress.city.name.equals(city) && p.getAge()>20) {
+				found = true;
+				return p;
+			}
+		}
+		if(!found) {
+			System.out.println("persons working at "+ city + " are not found");
+			return 0;
+		}
+		
+	}
+	
+
+
+	
+}

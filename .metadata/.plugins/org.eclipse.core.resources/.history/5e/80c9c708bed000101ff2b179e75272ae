@@ -1,0 +1,18 @@
+package com.exercise;
+
+public class Person {
+public String firstName;
+public String lastName;
+public String dateOfBirth;
+public String homeAddress;
+public String workAddress;
+
+public Person(String firstName, String lastName, String dateOfBirth, String homeAddress, String workAddress  ) {
+	this.firstName= firstName;
+	this.lastName = lastName;
+	this.dateOfBirth = dateOfBirth;
+	this.homeAddress = homeAddress;
+	this.workAddress = workAddress;
+	
+}
+}

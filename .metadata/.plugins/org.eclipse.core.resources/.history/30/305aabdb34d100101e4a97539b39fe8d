@@ -1,0 +1,30 @@
+package com.exercise;
+
+import java.util.ArrayList; 
+import java.util.HashMap;
+import java.util.Map;
+
+public class CountryAddressBook {
+
+	Map<Country,ArrayList<Person>> countryMap = new HashMap<>();
+	
+	public void addPerson(Person p) {
+		Country country = p.homeAddress.country;
+		countryMap.putIfAbsent(country, new ArrayList<Person>());
+		countryMap.get(country).add(p);
+		
+	} 
+
+	
+	public void getAllPerson() {
+	for(Country country : countryMap.keySet()) {
+		System.out.println("Country : ");
+		System.out.println("***************************");
+		for(Person p : countryMap.get(country) ) {
+			System.out.println(" "+ p);
+		}
+	}
+	}
+	
+
+}

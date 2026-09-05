@@ -1,0 +1,253 @@
+package com.exercise;
+
+public class Domain {
+public static void main(String[] args) {
+	
+	AddressBook book = new AddressBook();
+	
+	
+	Person p1 = new Person("Neha","Sharma","15/05/2000",
+		    new Address("H001","12A","MG Road",
+		        new City("City002","Kochi"), new Country("Country001","India"),
+		        "+919000000001","neha.sharma@example.com"),
+		    new Address("O001","221","Infopark Road",
+		        new City("City002","Kochi"), new Country("Country001","India"),
+		        "+919000000101","neha.work@example.com"));
+
+		Person p2 = new Person("Arjun","Menon","10/02/1999",
+		    new Address("H002","45C","Beach Road",
+		        new City("City003","Kozhikode"), new Country("Country001","India"),
+		        "+919000000002","arjun.menon@example.com"),
+		    new Address("O002","12","Cyberpark Lane",
+		        new City("City003","Kozhikode"), new Country("Country001","India"),
+		        "+919000000102","arjun.work@example.com"));
+
+		Person p3 = new Person("Anjali","Nair","21/08/2001",
+		    new Address("H003","78B","Temple Street",
+		        new City("City004","Thrissur"), new Country("Country001","India"),
+		        "+919000000003","anjali.nair@example.com"),
+		    new Address("O003","55","Tech Street",
+		        new City("City004","Thrissur"), new Country("Country001","India"),
+		        "+919000000103","anjali.work@example.com"));
+
+		Person p4 = new Person("Rahul","Varma","05/11/1998",
+		    new Address("H004","12D","Link Road",
+		        new City("City005","Kollam"), new Country("Country001","India"),
+		        "+919000000004","rahul.varma@example.com"),
+		    new Address("O004","32","Industrial Estate",
+		        new City("City005","Kollam"), new Country("Country001","India"),
+		        "+919000000104","rahul.work@example.com"));
+
+		Person p5 = new Person("Sneha","Krishnan","09/03/2000",
+		    new Address("H005","5A","Palace Road",
+		        new City("City006","Palakkad"), new Country("Country001","India"),
+		        "+919000000005","sneha.krishnan@example.com"),
+		    new Address("O005","44","IT Park Road",
+		        new City("City006","Palakkad"), new Country("Country001","India"),
+		        "+919000000105","sneha.work@example.com"));
+
+		Person p6 = new Person("Vishnu","Ravi","18/07/1997",
+		    new Address("H006","11B","Central Avenue",
+		        new City("City007","Kannur"), new Country("Country001","India"),
+		        "+919000000006","vishnu.ravi@example.com"),
+		    new Address("O006","66","Techzone Road",
+		        new City("City007","Kannur"), new Country("Country001","India"),
+		        "+919000000106","vishnu.work@example.com"));
+
+		Person p7 = new Person("Divya","Pillai","12/12/2002",
+		    new Address("H007","4C","College Road",
+		        new City("City008","Alappuzha"), new Country("Country001","India"),
+		        "+919000000007","divya.pillai@example.com"),
+		    new Address("O007","23","Business Hub",
+		        new City("City008","Alappuzha"), new Country("Country001","India"),
+		        "+919000000107","divya.work@example.com"));
+
+		Person p8 = new Person("Kiran","Suresh","02/09/1996",
+		    new Address("H008","9A","Market Road",
+		        new City("City009","Malappuram"), new Country("Country001","India"),
+		        "+919000000008","kiran.suresh@example.com"),
+		    new Address("O008","77","Software Street",
+		        new City("City009","Malappuram"), new Country("Country001","India"),
+		        "+919000000108","kiran.work@example.com"));
+
+		Person p9 = new Person("Meera","Das","27/04/2001",
+		    new Address("H009","6F","Park Avenue",
+		        new City("City010","Pathanamthitta"), new Country("Country001","India"),
+		        "+919000000009","meera.das@example.com"),
+		    new Address("O009","31","Office Park",
+		        new City("City010","Pathanamthitta"), new Country("Country001","India"),
+		        "+919000000109","meera.work@example.com"));
+
+		Person p10 = new Person("Sanjay","Radhakrishnan","14/06/1998",
+		    new Address("H010","22B","Fort Road",
+		        new City("City011","Trivandrum"), new Country("Country001","India"),
+		        "+919000000010","sanjay.rk@example.com"),
+		    new Address("O010","85","Govt Tech Road",
+		        new City("City011","Trivandrum"), new Country("Country001","India"),
+		        "+919000000110","sanjay.work@example.com"));
+
+		Person p11 = new Person("Aparna","Sasidharan","11/01/2000",
+		    new Address("H011","7D","Sunset Road",
+		        new City("City012","Kottayam"), new Country("Country001","India"),
+		        "+919000000011","aparna.sasi@example.com"),
+		    new Address("O011","48","Smart City Road",
+		        new City("City012","Kottayam"), new Country("Country001","India"),
+		        "+919000000111","aparna.work@example.com"));
+
+		Person p12 = new Person("Jithin","Babu","30/10/1999",
+		    new Address("H012","3E","Church Road",
+		        new City("City013","Idukki"), new Country("Country001","India"),
+		        "+919000000012","jithin.babu@example.com"),
+		    new Address("O012","22","Techno Lane",
+		        new City("City013","Idukki"), new Country("Country001","India"),
+		        "+919000000112","jithin.work@example.com"));
+
+		Person p13 = new Person("Keerthi","Venugopal","03/03/2001",
+		    new Address("H013","10B","Hill View Road",
+		        new City("City014","Wayanad"), new Country("Country001","India"),
+		        "+919000000013","keerthi.vg@example.com"),
+		    new Address("O013","53","Company Lane",
+		        new City("City014","Wayanad"), new Country("Country001","India"),
+		        "+919000000113","keerthi.work@example.com"));
+
+		Person p14 = new Person("Rohit","Soman","22/11/1997",
+		    new Address("H014","8C","Lakeside Road",
+		        new City("City015","Ernakulam"), new Country("Country001","India"),
+		        "+919000000014","rohit.soman@example.com"),
+		    new Address("O014","99","IT Valley",
+		        new City("City015","Ernakulam"), new Country("Country001","India"),
+		        "+919000000114","rohit.work@example.com"));
+
+		Person p15 = new Person("Ananya","Suresh","08/02/2002",
+		    new Address("H015","4A","Harbour Road",
+		        new City("City016","Kasaragod"), new Country("Country001","India"),
+		        "+919000000015","ananya.suresh@example.com"),
+		    new Address("O015","15","Digital Park",
+		        new City("City016","Kasaragod"), new Country("Country001","India"),
+		        "+919000000115","ananya.work@example.com"));
+
+		Person p16 = new Person("Gaurav","Raj","13/09/1998",
+		    new Address("H016","11C","Railway Road",
+		        new City("City017","Chennai"), new Country("Country001","India"),
+		        "+919000000016","gaurav.raj@example.com"),
+		    new Address("O016","67","Tech Blvd",
+		        new City("City017","Chennai"), new Country("Country001","India"),
+		        "+919000000116","gaurav.work@example.com"));
+
+		Person p17 = new Person("Lakshmi","Dev","06/07/2000",
+		    new Address("H017","6D","Flower Street",
+		        new City("City018","Bangalore"), new Country("Country001","India"),
+		        "+919000000017","lakshmi.dev@example.com"),
+		    new Address("O017","45","ITC Road",
+		        new City("City018","Bangalore"), new Country("Country001","India"),
+		        "+919000000117","lakshmi.work@example.com"));
+
+		Person p18 = new Person("Harish","Nambiar","29/12/1999",
+		    new Address("H018","9E","Green Street",
+		        new City("City019","Hyderabad"), new Country("Country001","India"),
+		        "+919000000018","harish.nambiar@example.com"),
+		    new Address("O018","74","Techspace Road",
+		        new City("City019","Hyderabad"), new Country("Country001","India"),
+		        "+919000000118","harish.work@example.com"));
+
+		Person p19 = new Person("Priya","Soman","25/04/2001",
+		    new Address("H019","2A","Airport Road",
+		        new City("City020","Mumbai"), new Country("Country001","India"),
+		        "+919000000019","priya.soman@example.com"),
+		    new Address("O019","92","Corporate Street",
+		        new City("City020","Mumbai"), new Country("Country001","India"),
+		        "+919000000119","priya.work@example.com"));
+
+		Person p20 = new Person("Aditya","Kapoor","17/01/1997",
+		    new Address("H020","13B","Sunrise Avenue",
+		        new City("City021","Delhi"), new Country("Country001","India"),
+		        "+919000000020","aditya.kapoor@example.com"),
+		    new Address("O020","28","Tech Central",
+		        new City("City021","Delhi"), new Country("Country001","India"),
+		        "+919000000120","aditya.work@example.com"));
+
+		Person p21 = new Person("Sahana","Ravi","19/08/1999",
+		    new Address("H021","3C","Garden Street",
+		        new City("City022","Pune"), new Country("Country001","India"),
+		        "+919000000021","sahana.ravi@example.com"),
+		    new Address("O021","64","Software Plaza",
+		        new City("City022","Pune"), new Country("Country001","India"),
+		        "+919000000121","sahana.work@example.com"));
+
+		Person p22 = new Person("Nikhil","Krishnan","23/02/2000",
+		    new Address("H022","14D","Hill Road",
+		        new City("City023","Coimbatore"), new Country("Country001","India"),
+		        "+919000000022","nikhil.krishnan@example.com"),
+		    new Address("O022","52","Tech Tower",
+		        new City("City023","Coimbatore"), new Country("Country001","India"),
+		        "+919000000122","nikhil.work@example.com"));
+
+		Person p23 = new Person("Riya","Sen","04/05/2001",
+		    new Address("H023","1B","River Road",
+		        new City("City024","Mangalore"), new Country("Country001","India"),
+		        "+919000000023","riya.sen@example.com"),
+		    new Address("O023","73","Business Street",
+		        new City("City024","Mangalore"), new Country("Country001","India"),
+		        "+919000000123","riya.work@example.com"));
+
+		Person p24 = new Person("Aakash","Reddy","08/10/1998",
+		    new Address("H024","19F","City Center Road",
+		        new City("City025","Visakhapatnam"), new Country("Country001","India"),
+		        "+919000000024","aakash.reddy@example.com"),
+		    new Address("O024","11","Techport Road",
+		        new City("City025","Visakhapatnam"), new Country("Country001","India"),
+		        "+919000000124","aakash.work@example.com"));
+
+		Person p25 = new Person("Varsha","Praveen","28/03/2000",
+		    new Address("H025","5E","Metro Road",
+		        new City("City026","Mysore"), new Country("Country001","India"),
+		        "+919000000025","varsha.praveen@example.com"),
+		    new Address("O025","88","IT Hub Lane",
+		        new City("City026","Mysore"), new Country("Country001","India"),
+		        "+919000000125","varsha.work@example.com"));
+
+
+
+
+	
+	
+	book.addPerson(p1);
+	book.addPerson(p2);
+	book.addPerson(p3);
+	book.addPerson(p4);
+	book.addPerson(p5);
+	book.addPerson(p6);
+	book.addPerson(p7);
+	book.addPerson(p8);
+	book.addPerson(p9); 
+	book.addPerson(p10);
+	
+	book.addPerson(p11);
+	book.addPerson(p12);
+	book.addPerson(p13);
+	book.addPerson(p14);
+	book.addPerson(p15);
+	book.addPerson(p16);
+	book.addPerson(p17);
+	book.addPerson(p18);
+	book.addPerson(p19);
+	book.addPerson(p20);
+	
+	book.addPerson(p21);
+	book.addPerson(p22);
+	book.addPerson(p23);
+	book.addPerson(p24);
+	book.addPerson(p25);
+	
+//	book.listByCity();
+//
+//  book.listByCountry();
+	
+//	System.out.println(book.getPersonOlderThan25());
+	book.getPersonWorkingInCity("Thrissur");
+	book.getPersonWorkingInCityAndOlderThan20("Visakhapatnam");
+	
+	
+	
+}
+}

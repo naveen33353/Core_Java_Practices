@@ -1,0 +1,10 @@
+package com.exercise;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class NewAddressBook {
+
+	Map<Country,ArrayList<Person>> map = new HashMap<>();
+}

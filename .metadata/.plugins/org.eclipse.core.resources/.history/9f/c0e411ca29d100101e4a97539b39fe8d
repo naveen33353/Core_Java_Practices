@@ -1,0 +1,251 @@
+package com.exercise;
+
+public class Domain {
+public static void main(String[] args) {
+	
+	AddressBook book = new AddressBook();
+	
+	
+	Person p1 = new Person("Neha","Sharma","15/05/2000",
+		    new Address("H001","12A","MG Road",
+		        new City("City002","Kochi"),new Country("Country001","India"),
+		        "+919000000001","neha.sharma@example.com"),
+		    new Address("O001","221","Infopark Road",
+		        new City("City002","Kochi"),new Country("Country001","India"),
+		        "+919000000101","neha.work@example.com"));
+
+//		Person p2 = new Person("Aarav","Nair","10/02/1999",
+//		    new Address("H002","45B","Palarivattom",
+//		        new City("City003","Ernakulam",new Country("Country001","India")),
+//		        "+919000000002","aarav.nair@example.com"),
+//		    new Address("O002","56","Tech Park Road",
+//		        new City("City003","Ernakulam",new Country("Country001","India")),
+//		        "+919000000102","aarav.work@example.com")));
+//
+//		Person p3 = new Person("Diya","Krishnan","21/11/2001",
+//		    new Address("H003","78C","Bypass Road",
+//		        new City("City004","Calicut",new Country("Country001","India")),
+//		        "+919000000003","diya.krishnan@example.com"),
+//		    new Address("O003","98","Cyber Park",
+//		        new City("City004","Calicut",new Country("Country001","India")),
+//		        "+919000000103","diya.work@example.com")));
+//
+//		Person p4 = new Person("Rohan","Menon","18/07/1998",
+//		    new Address("H004","33A","Temple Street",
+//		        new City("City005","Thrissur",new Country("Country001","India")),
+//		        "+919000000004","rohan.menon@example.com"),
+//		    new Address("O004","11","West Fort",
+//		        new City("City005","Thrissur",new Country("Country001","India")),
+//		        "+919000000104","rohan.work@example.com")));
+//
+//		Person p5 = new Person("Aisha","Rahman","02/04/2000",
+//		    new Address("H005","16D","Hill Road",
+//		        new City("City006","Kollam",new Country("Country001","India")),
+//		        "+919000000005","aisha.rahman@example.com"),
+//		    new Address("O005","344","Port Road",
+//		        new City("City006","Kollam",new Country("Country001","India")),
+//		        "+919000000105","aisha.work@example.com")));
+//
+//		Person p6 = new Person("Kiran","Suresh","30/09/1997",
+//		    new Address("H006","90B","Market Road",
+//		        new City("City007","Kottayam",new Country("Country001","India")),
+//		        "+919000000006","kiran.suresh@example.com"),
+//		    new Address("O006","88","Collectorate Road",
+//		        new City("City007","Kottayam",new Country("Country001","India")),
+//		        "+919000000106","kiran.work@example.com")));
+//
+//		Person p7 = new Person("Meera","Pillai","05/12/2001",
+//		    new Address("H007","12E","Lake View",
+//		        new City("City008","Alappuzha",new Country("Country001","India")),
+//		        "+919000000007","meera.pillai@example.com"),
+//		    new Address("O007","44","Beach Road",
+//		        new City("City008","Alappuzha",new Country("Country001","India")),
+//		        "+919000000107","meera.work@example.com")));
+//
+//		Person p8 = new Person("Vivek","Mathew","29/03/1999",
+//		    new Address("H008","22C","West Market",
+//		        new City("City009","Pathanamthitta",new Country("Country001","India")),
+//		        "+919000000008","vivek.mathew@example.com"),
+//		    new Address("O008","122","College Road",
+//		        new City("City009","Pathanamthitta",new Country("Country001","India")),
+//		        "+919000000108","vivek.work@example.com")));
+//
+//		Person p9 = new Person("Sana","Ali","14/08/2000",
+//		    new Address("H009","91A","Park Avenue",
+//		        new City("City010","Trivandrum",new Country("Country001","India")),
+//		        "+919000000009","sana.ali@example.com"),
+//		    new Address("O009","501","Technopark Phase 3",
+//		        new City("City010","Trivandrum",new Country("Country001","India")),
+//		        "+919000000109","sana.work@example.com")));
+//
+//		Person p10 = new Person("Kevin","Thomas","17/06/1998",
+//		    new Address("H010","55F","Green Avenue",
+//		        new City("City002","Kochi",new Country("Country001","India")),
+//		        "+919000000010","kevin.thomas@example.com"),
+//		    new Address("O010","302","Infopark Phase 2",
+//		        new City("City002","Kochi",new Country("Country001","India")),
+//		        "+919000000110","kevin.work@example.com")));
+//
+//		Person p11 = new Person("Sneha","Varma","03/10/2001",
+//		    new Address("H011","11G","Main Street",
+//		        new City("City003","Ernakulam",new Country("Country001","India")),
+//		        "+919000000011","sneha.varma@example.com"),
+//		    new Address("O011","18","Marine Drive",
+//		        new City("City003","Ernakulam",new Country("Country001","India")),
+//		        "+919000000111","sneha.work@example.com")));
+//
+//		Person p12 = new Person("Arjun","Das","09/01/1999",
+//		    new Address("H012","80B","Old Gate",
+//		        new City("City004","Calicut",new Country("Country001","India")),
+//		        "+919000000012","arjun.das@example.com"),
+//		    new Address("O012","55","CyberPark",
+//		        new City("City004","Calicut",new Country("Country001","India")),
+//		        "+919000000112","arjun.work@example.com")));
+//
+//		Person p13 = new Person("Lakshmi","Krish","26/02/2000",
+//		    new Address("H013","14D","Lotus Lane",
+//		        new City("City005","Thrissur",new Country("Country001","India")),
+//		        "+919000000013","lakshmi.krish@example.com"),
+//		    new Address("O013","39","MG Road",
+//		        new City("City005","Thrissur",new Country("Country001","India")),
+//		        "+919000000113","lakshmi.work@example.com")));
+//
+//		Person p14 = new Person("Jithin","Babu","22/05/1998",
+//		    new Address("H014","39H","Mill Road",
+//		        new City("City006","Kollam",new Country("Country001","India")),
+//		        "+919000000014","jithin.babu@example.com"),
+//		    new Address("O014","77","Harbor Road",
+//		        new City("City006","Kollam",new Country("Country001","India")),
+//		        "+919000000114","jithin.work@example.com")));
+//
+//		Person p15 = new Person("Parvathi","Sasidharan","11/04/1997",
+//		    new Address("H015","25A","Nehru Street",
+//		        new City("City007","Kottayam",new Country("Country001","India")),
+//		        "+919000000015","parvathi.s@example.com"),
+//		    new Address("O015","100","Railway Station Road",
+//		        new City("City007","Kottayam",new Country("Country001","India")),
+//		        "+919000000115","parvathi.work@example.com")));
+//
+//		Person p16 = new Person("Rakesh","Jayakumar","08/03/2002",
+//		    new Address("H016","88F","Hilltop Colony",
+//		        new City("City008","Alappuzha",new Country("Country001","India")),
+//		        "+919000000016","rakesh.jk@example.com"),
+//		    new Address("O016","21","Finishing Point Road",
+//		        new City("City008","Alappuzha",new Country("Country001","India")),
+//		        "+919000000116","rakesh.work@example.com")));
+//
+//		Person p17 = new Person("Amina","Hussain","19/07/2001",
+//		    new Address("H017","56C","Town Road",
+//		        new City("City009","Pathanamthitta",new Country("Country001","India")),
+//		        "+919000000017","amina.hussain@example.com"),
+//		    new Address("O017","40","Central Road",
+//		        new City("City009","Pathanamthitta",new Country("Country001","India")),
+//		        "+919000000117","amina.work@example.com")));
+//
+//		Person p18 = new Person("Varun","Soman","23/11/1999",
+//		    new Address("H018","10E","Power House Road",
+//		        new City("City010","Trivandrum",new Country("Country001","India")),
+//		        "+919000000018","varun.soman@example.com"),
+//		    new Address("O018","111","Technopark Phase 1",
+//		        new City("City010","Trivandrum",new Country("Country001","India")),
+//		        "+919000000118","varun.work@example.com")));
+//
+//		Person p19 = new Person("Anjali","George","14/12/2000",
+//		    new Address("H019","95A","Sunset Lane",
+//		        new City("City002","Kochi",new Country("Country001","India")),
+//		        "+919000000019","anjali.george@example.com"),
+//		    new Address("O019","63","Vytilla Mobility Hub",
+//		        new City("City002","Kochi",new Country("Country001","India")),
+//		        "+919000000119","anjali.work@example.com")));
+//
+//		Person p20 = new Person("Sachin","Paul","06/08/1997",
+//		    new Address("H020","41C","Central Avenue",
+//		        new City("City003","Ernakulam",new Country("Country001","India")),
+//		        "+919000000020","sachin.paul@example.com"),
+//		    new Address("O020","25","Marine Drive Road",
+//		        new City("City003","Ernakulam",new Country("Country001","India")),
+//		        "+919000000120","sachin.work@example.com")));
+
+//		Person p21 = new Person("Fathima","Rahim","03/03/2002",
+//		    new Address("H021","57F","Rose Street",
+//		        new City("City004","Calicut",new Country("Country001","India")),
+//		        "+919000000021","fathima.rahim@example.com"),
+//		    new Address("O021","87","Mavoor Road",
+//		        new City("City004","Calicut",new Country("Country001","India")),
+//		        "+919000000121","fathima.work@example.com")));
+//
+//		Person p22 = new Person("Sudeep","Kumar","28/09/2001",
+//		    new Address("H022","81B","Garden Road",
+//		        new City("City005","Thrissur",new Country("Country001","India")),
+//		        "+919000000022","sudeep.kumar@example.com"),
+//		    new Address("O022","133","Round North",
+//		        new City("City005","Thrissur",new Country("Country001","India")),
+//		        "+919000000122","sudeep.work@example.com")));
+//
+//		Person p23 = new Person("Nayana","Menon","12/02/1999",
+//		    new Address("H023","66E","Ocean View",
+//		        new City("City006","Kollam",new Country("Country001","India")),
+//		        "+919000000023","nayana.menon@example.com"),
+//		    new Address("O023","76","Beachside Road",
+//		        new City("City006","Kollam",new Country("Country001","India")),
+//		        "+919000000123","nayana.work@example.com")));
+//
+//		Person p24 = new Person("Harish","Ravi","20/07/1998",
+//		    new Address("H024","43A","Metro Lane",
+//		        new City("City007","Kottayam",new Country("Country001","India")),
+//		        "+919000000024","harish.ravi@example.com"),
+//		    new Address("O024","50","Airport Road",
+//		        new City("City007","Kottayam",new Country("Country001","India")),
+//		        "+919000000124","harish.work@example.com")));
+//
+//		Person p25 = new Person("Revathi","S","01/01/2000",
+//		    new Address("H025","71D","River View",
+//		        new City("City008","Alappuzha",new Country("Country001","India")),
+//		        "+919000000025","revathi.s@example.com"),
+//		    new Address("O025","12","Boat Jetty Road",
+//		        new City("City008","Alappuzha",new Country("Country001","India")),
+//		        "+919000000125","revathi.work@example.com")));
+
+
+
+	
+	
+	book.addPerson(p1);
+	book.addPerson(p2);
+	book.addPerson(p3);
+	book.addPerson(p4);
+	book.addPerson(p5);
+	book.addPerson(p6);
+	book.addPerson(p7);
+	book.addPerson(p8);
+	book.addPerson(p9); 
+	book.addPerson(p10);
+	
+	book.addPerson(p11);
+	book.addPerson(p12);
+	book.addPerson(p13);
+	book.addPerson(p14);
+	book.addPerson(p15);
+	book.addPerson(p16);
+	book.addPerson(p17);
+	book.addPerson(p18);
+	book.addPerson(p19);
+	book.addPerson(p20);
+	
+	book.addPerson(p21);
+	book.addPerson(p22);
+	book.addPerson(p23);
+	book.addPerson(p24);
+	book.addPerson(p25);
+	
+//	book.listByCity();
+//
+//  book.listByCountry();
+	
+	System.out.println(book.getPersonOlderThan25());
+	System.out.println(book.getPersonWorkingInCity("Thrissur"));
+	
+	
+	
+}
+}

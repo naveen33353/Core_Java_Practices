@@ -1,0 +1,11 @@
+package com.exercise;
+
+import java.util.HashSet;
+
+public class NewAddressBook {
+HashSet <Person> umiquePerson;
+
+public NewAddressBook() {
+	umiquePerson = new HashSet<>();
+}
+}

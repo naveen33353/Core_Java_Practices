@@ -1,0 +1,30 @@
+package com.exercise;
+
+public class Person {
+public String firstName;
+public String lastName;
+public String dateOfBirth;
+public Address homeAddress;
+public String workAddress;
+
+public Person(String firstName, String lastName, String dateOfBirth, Address homeAddress, String workAddress  ) {
+	this.firstName= firstName;
+	this.lastName = lastName;
+	this.dateOfBirth = dateOfBirth;
+	this.homeAddress = homeAddress;
+	this.workAddress = workAddress;
+	
+}
+public int getAge() {
+	String[] parts = dateOfBirth.split("-");
+	int birthYear = Integer.parseInt(parts[2]);
+	
+	int currentYear = 2025;
+}
+@Override
+public String toString() {
+	return " firstName : "+ firstName +", lastName : "+ lastName +
+			", dateOfBirth : "+ dateOfBirth +", homeAddress :"+ "(" + homeAddress + ")"+
+			", workAddress : "+ workAddress;
+}
+}
